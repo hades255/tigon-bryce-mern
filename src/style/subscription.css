@@ -1,0 +1,33 @@
+.subs-item {
+  width: 220px;
+  height: 500px;
+  background-color: rgba(63, 63, 63, 0.6);
+  border: 1px solid #aaa;
+  border-radius: 7px;
+  position: relative;
+}
+
+.subs-ribbon {
+  --f: 10px;
+  --r: 20px;
+  --t: 30px;
+  position: absolute;
+  height: 60px;
+  width: 150px;
+  inset: var(--t) auto auto calc(-1 * var(--f));
+  padding: 0 10px var(--f) calc(10px + var(--r));
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    calc(100% - var(--r)) calc(100% - var(--f)),
+    var(--f) calc(100% - var(--f)),
+    var(--f) 100%,
+    0 calc(100% - var(--f))
+  );
+  color: white;
+  box-shadow: 0 calc(-1 * var(--f)) 0 inset #0005;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+}

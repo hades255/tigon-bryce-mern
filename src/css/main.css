@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #000;
+}
+
+/* body {
+	background: url('https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg');
+	background-size: cover;
+	background-position: center	center;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	min-height: 100vh;
+	font-family: 'Lato', sans-serif;
+	margin: 0 0 50px;
+} */
+
+.font_raleway{
+	font-family: 'Raleway';
+	/* letter-spacing: 0.5px; */
+}
+.font-20{
+	font-size: 20px;
+}
+.font-36{
+	font-size: 36px;
+}
+.center{
+	text-align: center;
+}
+.bold{
+	font-weight: bold;
+}
+.join{
+	width: 23.5rem;
+	text-align: center;
+	padding: 7px;
+}
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 5px; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+  }
+
+  ::-webkit-scrollbar {
+	width: 10px;
+	
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+	border-radius: 5px;
+  }
+
+.button{
+	background-color: #4B73FF;
+}
+
+.m-5{
+	margin: 2.3rem 0rem;
+}
+
+.chat-container {
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 25px;
+	box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.7);
+	/* overflow: hidden; */
+	padding: 15px;
+	position: relative;
+	width: 50rem;
+	height: 80vh;
+	max-width: 100%;
+	margin: 0 auto;
+	color: #000;
+	
+}
+
+.chat {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	list-style-type: none;
+	padding: 15px;
+	margin: 0;
+	overflow-y: auto;
+}
+.chatbox{
+	height: 65vh;
+	overflow-y: auto;
+	padding-left: 20px;
+}
+
+.message {
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 50px;
+	box-shadow: 0px 15px 5px 0px rgba(0,0,0,0.5);
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.message.left {
+	padding: 15px 20px 15px 70px;
+}
+
+.message.right {
+	align-self: flex-end;
+	padding: 15px 70px 15px 20px;
+}
+
+.logo {
+	border-radius: 50%;
+	box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.7);
+	object-fit: cover;
+	position: absolute;
+	left: 10px;
+	top: -10px;
+	width: 50px;
+	height: 50px;
+}
+
+.message.right .logo {
+	left: auto;
+	right: 10px;
+}
+
+.message p {
+	margin: 0;
+}
+
+.text_input {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 10px 15px;
+	width: 90%;
+	background: none;
+	border: 1px solid #fff;
+	border-radius: 40px;
+	margin: 10px auto;
+	text-align: start;
+	
+}
+.input_box{
+	border: none;
+	font-size: 18px;
+	background: none;
+	color: #fff;
+	width: 100%;
+}
+input:focus{
+	outline: none;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer i {
+    color: red;
+}
+
+footer a {
+    color: #3c97bf;
+    text-decoration: none;
+}
