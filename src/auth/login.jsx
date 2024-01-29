@@ -5,6 +5,8 @@ import { Button, Stack, TextField, Typography } from "@mui/material";
 import titleImage from "../assets/title_image.png";
 
 export default function Login() {
+  const navigator = useNavigate();
+
   const [state, setState] = useState({
     email: "",
     password: "",
@@ -17,7 +19,9 @@ export default function Login() {
     [state]
   );
 
-  // const handleLogin=useCallback
+  const handleLogin = useCallback(() => {
+    navigator("/subscription");
+  }, []);
 
   return (
     <Stack direction={"row"} justifyContent={"center"}>
